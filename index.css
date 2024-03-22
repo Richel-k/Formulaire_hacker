@@ -1,0 +1,193 @@
+*
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font : 700;
+    font-size: medium;
+}
+body{
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    min-height: 100vh;
+	background: #000;
+}
+section
+{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    gap: 2px;
+	flex-wrap: wrap;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000,green,#000);
+    animation: anim 5s linear infinite;
+}
+h1{
+    color: green;
+    margin-bottom: 40px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1.5s;
+}
+
+h1:hover
+{
+    transform: translateY(-20px);
+    color: #fff;
+    font-size:50px;
+}
+
+h2
+{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+
+}
+
+.message
+{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+img
+{
+    height: 16px;
+    width: 16px;
+    margin-top: 7px;
+}
+@keyframes anim
+{
+	0%
+	{
+		transform: translateY(-100%);
+        margin-top: 20px;
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+section .sign-in
+{
+    position: absolute;
+    z-index: 1000;
+    padding: 40px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background: #1f1f1f;
+    box-shadow: 0 3px 5px #0f0e0e;
+    border-radius: 10px;
+   /* text-align: center;*/
+    padding: auto;
+}
+section .sign-in .lien
+{
+    margin: 20px 0;
+    transition: 2s;
+}
+section .sign-in .lien .forgot
+{
+    margin-left: 46px;
+    text-decoration: underline;
+    margin-right: 70px;
+    color: aquamarine;
+}
+section .sign-in .lien .signin
+{
+    padding-left: 100px;
+    margin-right: 50px;
+    color: green;
+    font-size: 23px;
+    font-family: Georgia, Times, serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section .sign-in .lien .signin:hover
+{
+    color: blue;
+    transition: 1s;
+}
+section .sign-in .lien .forgot:hover
+{
+    color: blue;
+    transition: 1s;
+}
+input
+{  margin-top: 25px;
+    border: 2px solid white;
+    width: 85%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(200,200,200,0.5);
+    border: none;
+    padding-inline-start: 8px;
+    transition: 1s;
+    margin-left: 20px;
+    
+}
+
+.User:hover
+{
+    transform: translateY(-10px);
+    color: #fff;
+    transition: 1.7s;
+    box-shadow: 0px 1px 5px rgb(193, 229, 138);
+}
+
+.pass:hover{
+    transform: translateY(10px);
+    color: #fff;
+    transition: 1.7s;
+    box-shadow: 0px -1px 5px rgb(193, 229, 138);
+}
+input[type = "submit"]
+{
+    background-color: green;
+    transition: 1s ;
+    text-decoration: dashed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type = "submit"]:hover
+{
+    background-color: violet;
+    transition: 1s ;
+}
+section span
+{
+    background: #181818;
+    width: calc(6.25vw - 2px);
+	height: calc(6.25vw - 2px);
+    position: relative;
+    display: block;
+    /*z-index: 2;*/
+    transition: 3s;
+}
+span:hover
+{
+    background: green;
+    transition: 0s;
+}
+
+.verif
+{
+    display:flex
+}
